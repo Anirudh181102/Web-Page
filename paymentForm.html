@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <style>
+        
+        h1{background-color: crimson; color: white;}
+        *{font-family: Arial, Helvetica, sans-serif;
+            margin-left: 70px;
+            margin-right: 70px;
+         }
+    </style>
+</head>
+<body>
+    <img src="Default.jpg" height="70">
+    <hr><br>
+
+    <form action="">
+        <h1>Payment Form</h1>
+        <h3>Personal Details</h3>
+        <p>Name: <input type="text" name="name" required></p>
+        <fieldset>
+            <legend>Gender</legend>
+            <p>
+                Male <input type="radio" name="gender" id="male" required>
+                Female <input type="radio" name="gender" id="female" required>
+            </p>
+        </fieldset>
+        <p>Address: <textarea name="address" id="address" cols="70" rows="5"></textarea></p>
+        <p>E-Mail: <input type="email" name="email" id="email"></p>
+        <p>Pincode: <input type="number" name="pincode" id="pincode"></p>
+
+        <hr>
+        <h3>Payment Details</h3>
+        <p>Card Type: 
+            <select name="card_type" id="card_type" required>
+                <option value="">Select a card type</option>
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="rupay">Rupay</option>
+            </select>
+        </p>
+        <p>Card Number: <input type="number" name="card_number" id="card_number" required></p>
+        <p>Valid Till: <input type="date" name="valid_till" id="valid_till" required></p>
+        <p>CVV: <input type="password" name="cvv" id="cvv" required></p>
+        <input type="submit" value="Pay Now">
+    </form>
+</body>
+</html>
